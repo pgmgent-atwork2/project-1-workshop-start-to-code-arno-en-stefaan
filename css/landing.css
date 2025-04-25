@@ -1,7 +1,7 @@
 .outline {
   max-width: 62.5rem;
   margin: 0 auto;
-  padding: var(--spacing-xl) var(--spacing-l);
+  padding: var(--spacing-3xl) var(--spacing-l);
   display: flex;
   gap: var(--spacing-base);
   margin-bottom: var(--spacing-xl);

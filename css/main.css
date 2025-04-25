@@ -48,6 +48,11 @@ main {
   margin: 0 auto;
   padding: 0 var(--spacing-l);
 }
+main::after {
+  content: '';
+  display: block;
+  height: var(--spacing-l);
+}
 
 /* .main-image {
   width: 17rem;
@@ -68,8 +73,12 @@ main {
     margin: 0 auto;
   }
 }
+/* TODO */
+/* FORMAAT FOTO VSCODE VERKLEINEN */
 .main-image img {
+  max-width: 100%;
   transition: all 0.3s ease;
+  border-radius: var(--radius-base);
   &:hover {
     transform: scale(1.02);
   }
@@ -86,7 +95,6 @@ article:last-child {
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-l);
   position: relative;
-
   /* i needed to redefine the variable, because it wouldn't work in the ::before pseudo class */
   --tint: #282828;
 }
@@ -94,6 +102,27 @@ article:last-child::before {
   content: '';
   position: absolute;
   top: 0;
+  left: 0;
+  height: 1.7px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--tint) 0%,
+    var(--tint) 2%,
+    transparent 2%,
+    transparent 3%,
+    var(--tint) 3%,
+    var(--tint) 97%,
+    transparent 97%,
+    transparent 98%,
+    var(--tint) 98%,
+    var(--tint) 100%
+  );
+}
+article:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
   left: 0;
   height: 1.7px;
   width: 100%;
@@ -142,3 +171,7 @@ article:last-child::before {
     background-color: var(--standout-shade);
   }
 }
+
+/* *************************** */
+/* SETUP */
+/* *************************** */
