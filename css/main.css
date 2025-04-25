@@ -1,0 +1,144 @@
+@import './variables.css';
+@import './landing.css';
+/* .comic-neue-light {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.comic-neue-regular {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-neue-bold {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light-italic {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.comic-neue-regular-italic {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.comic-neue-bold-italic {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+/* *************************** */
+/* LANDING */
+/* *************************** */
+
+/* *************************** */
+/* MAIN */
+/* *************************** */
+main {
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+/* .main-image {
+  width: 17rem;
+} */
+.general {
+  display: flex;
+  gap: var(--spacing-l);
+  @media (max-width: 48rem) {
+    flex-direction: column;
+    gap: var(--spacing-l);
+  }
+}
+
+.main-image {
+  width: 50%;
+  @media (max-width: 48rem) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.main-image img {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.paragraph {
+  width: 50%;
+  padding: var(--spacing-xl);
+  @media (max-width: 48rem) {
+    width: 100%;
+    padding: var(--spacing-base) var(--spacing-xl);
+  }
+}
+article:last-child {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-l);
+  position: relative;
+
+  /* i needed to redefine the variable, because it wouldn't work in the ::before pseudo class */
+  --tint: #282828;
+}
+article:last-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.7px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--tint) 0%,
+    var(--tint) 2%,
+    transparent 2%,
+    transparent 3%,
+    var(--tint) 3%,
+    var(--tint) 97%,
+    transparent 97%,
+    transparent 98%,
+    var(--tint) 98%,
+    var(--tint) 100%
+  );
+}
+.btn-container {
+  margin: var(--spacing-xl) auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-l);
+  padding-bottom: var(--spacing-l);
+}
+
+.btn {
+  text-decoration: none;
+  padding: var(--spacing-xxs) var(--spacing-l);
+  border: none;
+  border-radius: var(--radius-xxl);
+  font-size: var(--size-m);
+  transition: all 0.3s ease;
+}
+.setup-btn {
+  background-color: var(--contrast);
+  color: var(--primary);
+  &:hover {
+    background-color: black;
+  }
+}
+.start-btn {
+  background-color: var(--standout);
+  color: white;
+  &:hover {
+    background-color: var(--standout-shade);
+  }
+}
