@@ -43,6 +43,17 @@
 /* *************************** */
 /* MAIN */
 /* *************************** */
+body {
+  font-family: 'open-sans', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  /* font-family: 'Comic Neue', cursive; */
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--size-6xl);
+}
 main {
   max-width: 62.5rem;
   margin: 0 auto;
@@ -59,6 +70,7 @@ main::after {
 } */
 .general {
   display: flex;
+  align-items: center;
   gap: var(--spacing-l);
   @media (max-width: 48rem) {
     flex-direction: column;
@@ -74,19 +86,28 @@ main::after {
   }
 }
 /* TODO */
-/* FORMAAT FOTO VSCODE VERKLEINEN */
+
 .main-image img {
   max-width: 100%;
+
   transition: all 0.3s ease;
   border-radius: var(--radius-base);
   &:hover {
     transform: scale(1.02);
+  }
+  @media (max-width: 48rem) {
+    max-height: 30rem;
+    display: block;
+    margin: 0 auto;
   }
 }
 .paragraph {
   width: 50%;
   padding: var(--spacing-xl);
   @media (max-width: 48rem) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding: var(--spacing-base) var(--spacing-xl);
   }
@@ -175,3 +196,18 @@ article:last-child::after {
 /* *************************** */
 /* SETUP */
 /* *************************** */
+.paragraph .btn {
+  display: inline-block;
+  margin-top: var(--spacing-xxl) !important;
+  @media (max-width: 48rem) {
+    margin: var(--spacing-xxl) auto;
+  }
+}
+.checklist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+  padding: var(--spacing-l);
+  padding-bottom: 0;
+}

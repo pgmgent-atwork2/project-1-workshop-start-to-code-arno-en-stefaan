@@ -15,17 +15,6 @@
   flex-direction: column;
   gap: var(--spacing-l);
 }
-h1 {
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: var(--size-6xl);
-}
-p {
-  font-family: 'open-sans', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .landing-page {
   background: linear-gradient(
