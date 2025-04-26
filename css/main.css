@@ -204,10 +204,12 @@ article:last-child::after {
   }
 }
 .checklist {
+  background-color: var(--background-light);
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-base);
+
+  gap: var(--spacing-s);
   padding: var(--spacing-l);
   padding-bottom: 0;
 }
