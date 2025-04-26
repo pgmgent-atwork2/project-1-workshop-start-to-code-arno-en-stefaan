@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './landing.css';
+@import './cards.js';
 /* .comic-neue-light {
   font-family: 'Comic Neue', cursive;
   font-weight: 300;
@@ -35,13 +36,8 @@
   font-weight: 700;
   font-style: italic;
 } */
-
-/* *************************** */
-/* LANDING */
-/* *************************** */
-
-/* *************************** */
-/* MAIN */
+/* *************************** */ /* LANDING */
+/* *************************** */ /* *************************** */ /* MAIN */
 /* *************************** */
 body {
   font-family: 'open-sans', cursive;
@@ -211,5 +207,18 @@ article:last-child::after {
 
   gap: var(--spacing-s);
   padding: var(--spacing-l);
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
+}
+
+/* *************************** */
+/* TUTORIAL */
+/* *************************** */
+.html-part {
+  background-color: #e7f2fb;
+}
+.css-part {
+  background-color: #e2f7f1;
+}
+.js-part {
+  background-color: #fff8e1;
 }

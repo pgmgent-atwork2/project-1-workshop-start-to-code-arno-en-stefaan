@@ -9,59 +9,93 @@
   <body>
     <main>
       <div class="introduction">
-        <h1>Higher or Lower</h1>
+        <h1>Hoger Lager</h1>
+        <h2>Intro: Het spel</h2>
         <p>
-          In this game, you will be given a number and you have to guess if the
+          <!-- In this game, you will be given a number and you have to guess if the
           next number is higher or lower. You will get points for each correct
-          guess.
+          guess. -->
+          In dit spel krijgt de speler een nummer. Daarna moet hij klikken op
+          een knop hoger of lager om het resultaat te raden van het volgende
+          getal.
         </p>
         <table class="content-table">
-            <tr class="content__title">
-              <th>Steps</th>
-              <th>Page</th>
-            </tr>
-            <tr class="content">
-              <td id="content__step">step 1</td>
-              <td id="content__link"><a href="#step1">Step 1</a></td>
-            </tr>
-            <tr class="content">
-              <td id="content__step">step 2</td>
-              <td id="content__link"><a href="#step2">Step 2</a></td>
-            </tr>
-            <tr class="content">
-              <td id="content__step">step 3</td>
-              <td id="content__link"><a href="#step3">Step 3</a></td>
-            </tr>
-          </table>
-          
+          <tr class="content__title">
+            <th>Steps</th>
+            <th>Page</th>
+          </tr>
+          <tr class="content">
+            <td id="content__step">step 1</td>
+            <td id="content__link"><a href="#step1">Step 1</a></td>
+          </tr>
+          <tr class="content">
+            <td id="content__step">step 2</td>
+            <td id="content__link"><a href="#step2">Step 2</a></td>
+          </tr>
+          <tr class="content">
+            <td id="content__step">step 3</td>
+            <td id="content__link"><a href="#step3">Step 3</a></td>
+          </tr>
+        </table>
       </div>
 
       <div class="steps-container">
-        <div class="step" id="step1">
-          <h2>Step 1</h2>
-          <p>
-            In this step, you will learn how to set up the game. You will need to
-            create a new file and add the necessary code to it. You can use any
-            text editor you like, but we recommend using Visual Studio Code.
-          </p>
-        </div>
-        <div class="step" id="step2">
-          <h2>Step 2</h2>
-          <p>
-            In this step, you will learn how to play the game. You will be given
-            a number and you have to guess if the next number is higher or lower.
-            You will get points for each correct guess. If you guess wrong, you
-            will lose points.
-          </p>
-        </div>
-      </div>
-      <div class="step" id="step3">
-        <h2>Step 3</h2>
-        <p>
-            In this step, you will learn how to add more features to the game. You
-            can add a timer, a score counter, and more. You can also change the
-            rules of the game to make it more challenging.
-        </p>
+        <section class="html-part">
+          <h2>HTML: De basis van de applicatie</h2>
+          <div class="step" id="step1">
+            <h3>Stap 1 Maak je HTML layout</h3>
+            <p>
+              Maak een projectmap aan. Dit doe je door je HTML-mapje aan te
+              klikken, zodat het opent in de editor. Je typt een uitroepteken en
+              vervolgens op tab. Nu heb je de basisstructuur van je
+              HTML-bestand. Geef een naam aan de titel in het head-gedeelte. Als
+              je vervolgens je wijziging opslaat en kijkt in je browser die je
+              via "Go Live" geopend hebt, zul je zien dat je tabblad de naam van
+              je titel heeft meegekregen.
+            </p>
+          </div>
+          <div class="step" id="step2">
+            <h3>Stap 2 Het gebruik van HTML-tags.</h3>
+            <p>
+              We beginnen met een titel voor onze game. Titels zijn h-tags in
+              verschillende groottes, zoals h1, h2, h3 enz.
+            </p>
+            <p> We beginnen met een titel. Maak een tag <pre><code>&lt;h1&gt;&lt;/h1&gt;</code></pre> en plaats er de tekst 'Hoger Lager' tussen.</p> 
+
+            <!-- <p>
+              In this step, you will learn how to play the game. You will be given
+              a number and you have to guess if the next number is higher or
+              lower. You will get points for each correct guess. If you guess
+              wrong, you will lose points.
+            </p> -->
+          </div>
+          <div class="step" id="step3">
+            <h3>Stap 3</h3>
+            <!-- <p>
+              In this step, you will learn how to add more features to the game. You
+              can add a timer, a score counter, and more. You can also change the
+              rules of the game to make it more challenging.
+            </p> -->
+          </div>
+        </section>
+        <section class="css-part">
+          <h2>CSS: We gaan onze pagina wat opfleuren!</h2>
+          <div class="step" id="step4">
+            <h3>Stap 1 Maak je HTML layout</h3>
+            <p>
+              Maak een projectmap aan. Dit doe je door je HTML-mapje aan te
+              klikken, zodat het opent in de editor. Je typt een uitroepteken en
+              vervolgens op tab. Nu heb je de basisstructuur van je
+              HTML-bestand. Geef een naam aan de titel in het head-gedeelte. Als
+              je vervolgens je wijziging opslaat en kijkt in je browser die je
+              via "Go Live" geopend hebt, zul je zien dat je tabblad de naam van
+              je titel heeft meegekregen.
+            </p>
+          </div>
+        </section>
+        <section class="js-part">
+          <h2>Javascript: De magie die onze app tot leven wekt!</h2>
+        </section>
       </div>
     </main>
   </body>
