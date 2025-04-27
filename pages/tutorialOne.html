@@ -60,7 +60,9 @@
               We beginnen met een titel voor onze game. Titels zijn h-tags in
               verschillende groottes, zoals h1, h2, h3 enz.
             </p>
-            <p> We beginnen met een titel. Maak een tag <pre><code>&lt;h1&gt;&lt;/h1&gt;</code></pre> en plaats er de tekst 'Hoger Lager' tussen.</p> 
+            <p>We beginnen met een titel. Maak een tag</p>
+            <pre><code>&lt;h1&gt;&lt;/h1&gt;</code></pre>
+            <p>en plaats er de tekst 'Hoger Lager' tussen.</p>
 
             <!-- <p>
               In this step, you will learn how to play the game. You will be given
@@ -95,6 +97,108 @@
         </section>
         <section class="js-part">
           <h2>Javascript: De magie die onze app tot leven wekt!</h2>
+          <div>
+            <h3>
+              stap 1: verzamel alle tekst stukjes die we nodig hebben voor aan
+              te passen of aan te klikken
+            </h3>
+            <p>
+              we gaan levens, score en een random getal nodig hebben. Je hebt
+              hier al html voor voorzien dus we gaan deze oproepen via hun
+              id/classe
+            </p>
+            <pre><code>
+              let levens = document.querySelector(".levens");
+              let score = document.querySelector(".score");
+              let gokCijfer = document.querySelector(".gokCijfer");
+
+              //klikbare elementen
+              let btnHoger = document.querySelector(".buttonHoger");
+              let btnLager = document.querySelector(".buttonLager");
+            </code></pre>
+            <p>
+              nu gaan we een functie maken waar we een random getal in gaan
+              aanmaken. we zetten dit in een functie zodat we het nummer
+              meerdermaals kunnen gebruiken zonder dat het nummer hetzelfde
+              blijf. We gaan ook nog een aantal levens en de huidige score moete
+              bijhouden. we gaan hier gewoon een cijfer voor bijhouden dat we
+              kunnen aanassen/toepassen.
+            </p>
+            <pre><code>
+              // aantal levens en score instellen
+              let aantalLevens = 3;
+              let huidigeScore = 0;
+
+              // functie om een nieuw getal te genereren
+              function nieuwGetal() {
+                return Math.floor(Math.random() * 11);
+              }</code></pre>
+
+            <p>
+              We hebben tot nu toe de buttons al aangeroepen maar als je er op
+              klikt gebeurd er nog altijd niets. Dit komt doordat er geen
+              "eventlistener" aan verbonden is.
+            </p>
+            <pre><code>
+              //buttons een functie geven
+              btnHoger.addEventListener("click", clickHoger);
+              btnLager.addEventListener("click", clickLager);</code></pre>
+            <p>
+              nu dat onze buttons een functie hebben kunnen we elke functie
+              uitschrijven. deze 2 functies gaan bijna exact het zelfde zijn
+              buiten de conditie. een conditie is een stukje coden dat we gaan
+              checken of het juist of fout is. Dit gaan we doen met een "if-else
+              loop".
+            </p>
+            <pre>
+              <code>
+                //functies aanmaken voor als er op een knop gedrukt word
+                function clickHoger() {
+                  const nieuw = nieuwGetal();
+                  if (nieuw > huidigGetal) {
+                    huidigeScore++;
+                    score.textContent = huidigeScore;
+                  } else {
+                    aantalLevens--;
+                    levens.textContent = aantalLevens;
+                  }
+                  huidigGetal = nieuw;
+                  gokCijfer.textContent = huidigGetal;
+                  checkGameOver();
+                }
+
+                function clickLager() {
+                  const nieuw = nieuwGetal();
+                  if (nieuw < huidigGetal) {
+                    huidigeScore++;
+                    score.textContent = huidigeScore;
+                  } else {
+                    aantalLevens--;
+                    levens.textContent = aantalLevens;
+                  }
+                  huidigGetal = nieuw;
+                  gokCijfer.textContent = huidigGetal;
+                  checkGameOver();
+                }
+              </code>
+            </pre>
+            <p>
+              De laatste stap is checken als het spel gedaan is, we doen dit in
+              bijde functies op het einde. hierin gaan we checken of we nog
+              genoeg levens hebben om veder te spelen, zo niet herstart het
+              spel.
+            </p>
+            <pre>
+              <code>
+                function checkGameOver() {
+                  if (aantalLevens <= 0) {
+                    alert("Game Over! Je score was: " + huidigeScore);
+                    location.reload(); // spel herstarten
+                  }
+                }
+              </code>
+            </pre>
+          </div>
         </section>
       </div>
     </main>
