@@ -254,6 +254,6 @@ article:last-child::after {
   width: fit-content;
   color: white;
   margin: 0 auto;
-
+  border: var(--primary) 1.3px solid;
   background-color: var(--contrast);
 }
