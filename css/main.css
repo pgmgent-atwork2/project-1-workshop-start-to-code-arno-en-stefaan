@@ -1,3 +1,4 @@
+@import './reset.css';
 @import './variables.css';
 @import './landing.css';
 @import './cards.js';
@@ -81,7 +82,6 @@ main::after {
     margin: 0 auto;
   }
 }
-/* TODO */
 
 .main-image img {
   max-width: 100%;
@@ -201,6 +201,7 @@ article:last-child::after {
 }
 .checklist {
   background-color: var(--background-light);
+  border-radius: var(--radius-base);
   list-style-type: none;
   display: flex;
   flex-direction: column;
