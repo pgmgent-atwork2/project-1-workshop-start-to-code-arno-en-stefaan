@@ -249,3 +249,11 @@ article:last-child::after {
 .js-section {
   background-color: var(--yellow-subtle);
 }
+.intro .btn {
+  display: flex;
+  width: fit-content;
+  color: white;
+  margin: 0 auto;
+
+  background-color: var(--contrast);
+}
