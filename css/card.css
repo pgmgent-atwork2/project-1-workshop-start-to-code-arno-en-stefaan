@@ -1,0 +1,29 @@
+.step-card {
+  background-color: var(--primary);
+  padding: var(--spacing-bl);
+  border-radius: var(--radius-l);
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.06);
+  margin-top: var(--spacing-bl);
+  @media (max-width: 48rem) {
+    padding: var(--s);
+  }
+}
+.step-card h3 {
+  margin-bottom: var(--spacing-base);
+  color: var(--purple);
+}
+.step-card p {
+  line-height: 1.6;
+}
+pre {
+  background-color: var(--grey-subtle);
+  padding: 15px;
+  border-radius: var(--radius-base);
+  overflow-x: auto;
+  width: 90%;
+  margin: var(--spacing-s) auto;
+}
+code {
+  font-family: 'Courier New', monospace;
+  font-size: var(--size-s);
+}
