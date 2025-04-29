@@ -78,14 +78,16 @@
         <h2>Stap voor Stap overzicht</h2>
         <div class="steps-table">
           <a href="#htmlstep1" class="step-link">📃 HTML Stap 1</a>
-          <a href="#htmlstep1" class="step-link">📃 HTML Stap 2</a>
-          <a href="#htmlstep1" class="step-link">📃 HTML Stap 3</a>
+          <a href="#htmlstep2" class="step-link">📃 HTML Stap 2</a>
+          <a href="#htmlstep3" class="step-link">📃 HTML Stap 3</a>
           <a href="#cssstep1" class="step-link">🎨 CSS Stap 1</a>
-          <a href="#cssstep1" class="step-link">🎨 CSS Stap 2</a>
-          <a href="#cssstep1" class="step-link">🎨 CSS Stap 3</a>
+          <a href="#cssstep2" class="step-link">🎨 CSS Stap 2</a>
+          <a href="#cssstep3" class="step-link">🎨 CSS Stap 3</a>
           <a href="#jsstep1" class="step-link">✴️ JS Stap 1</a>
-          <a href="#jsstep1" class="step-link">✴️ JS Stap 2</a>
-          <a href="#jsstep1" class="step-link">✴️ JS Stap 3</a>
+          <a href="#jsstep2" class="step-link">✴️ JS Stap 2</a>
+          <a href="#jsstep3" class="step-link">✴️ JS Stap 3</a>
+          <a href="#jsstep4" class="step-link">✴️ JS Stap 4</a>
+          <a href="#jsstep5" class="step-link">✴️ JS Stap 5</a>
         </div>
       </div>
 
@@ -100,145 +102,221 @@
             </p>
           </div>
           <div class="step-card" id="htmlstep1">
-            <h3>Stap 1 Maak je HTML layout</h3>
+            <h3>Stap 1 🗂️ Maak je project en basis-HTML aan</h3>
             <p>
-              Maak een projectmap aan. Dit doe je door je HTML-mapje aan te
-              klikken, zodat het opent in de editor. Je typt een uitroepteken en
-              vervolgens op tab. Nu heb je de basisstructuur van je
-              HTML-bestand. Geef een naam aan de titel in het head-gedeelte. Als
-              je vervolgens je wijziging opslaat en kijkt in je browser die je
-              via "Go Live" geopend hebt, zul je zien dat je tabblad de naam van
-              je titel heeft meegekregen.
+              Begin met het maken van een nieuwe map op je computer,
+              bijvoorbeeld genaamd <code>hoger-lager</code>. Open deze map in je
+              code-editor (zoals Visual Studio Code).
             </p>
+            <p>
+              Maak vervolgens een nieuw bestand aan met de naam
+              <code>index.html</code>. Typ een uitroepteken (<code>!</code>) en
+              druk op <kbd>Tab</kbd> of <kbd>Enter</kbd>. Dit genereert
+              automatisch een basis HTML-structuur.
+            </p>
+            <p>
+              Pas de titel aan naar <code>Hoger Lager</code> in de &lt;title&gt;
+              tag.
+            </p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="nl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;title&gt;Hoger Lager&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+        
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
           </div>
+
+          <!-- Stap 2 -->
           <div class="step-card" id="htmlstep2">
-            <h3>Stap 2 📃 Het gebruik van HTML-tags.</h3>
+            <h3>Stap 2 🧱 Voeg de structuur toe</h3>
             <p>
-              We beginnen met een titel voor onze game. Titels zijn h-tags in
-              verschillende groottes, zoals h1, h2, h3 enz.
+              In de <code>&lt;body&gt;</code> van je document gaan we een
+              container maken met daarin twee gedeeltes, een container voor je
+              levens en score en een container voor je getal en buttons.
+              hiervoor gaan we divs gebruiken. Divs worden vaak gebruikt als een
+              groeperings element. We gaan deze containers ook al een classe
+              geven zodat we de containers later nog makkelijk kunnen stylen.
             </p>
-            <p>We beginnen met een titel. Maak een tag</p>
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>en plaats er de tekst 'Hoger Lager' tussen.</p>
+            <p>
+              Je code in het &lt;body&gt;-gedeelte zou er nu zo uit moeten zien:
+            </p>
+            <pre><code>
+&lt;div class="gameContainer"&gt;
+&lt;div class="statusBar"&gt;
+&lt;/div&gt;
+
+&lt;div class="gameArea"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+            <p>
+              Bewaar je bestand en open het in de browser om te zien of alles
+              correct verschijnt.
+            </p>
           </div>
           <div class="step-card" id="htmlstep3">
-            <h3>Stap 3 Lorem ipsum</h3>
+            <h3>Stap 3 Voeg de visual elementen toe</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              nemo voluptatem impedit voluptates commodi modi, ullam sapiente
-              debitis officia quas ducimus, ad quia dolor. Nulla, dicta. Aperiam
-              temporibus dignissimos assumenda.
+              De containers dat we net gemaakt hebben zijn niet zichtbaar omdat
+              we er nog geen andere elementen in hebben toegevoegd. We gaan nu
+              een paar 'p' tags en buttons toevoegen in de containers.
             </p>
 
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="step-card special-card" id="htmlstep3">
-            <img
-              src="../assets/images/programmer2.png"
-              alt="programmeur illustratie"
-              class="step-illustration"
-            />
-            <h3>Stap 4 Testkaartje met foto</h3>
+            <pre><code>
+&lt;div class="gameContainer"&gt;
+&lt;div id="statusBar"&gt;
+&lt;div&gt;
+&lt;p&gt;Score:&lt;/p&gt;
+&lt;p class="score"&gt;0&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;                
+&lt;p&gt;Levens:&lt;/p&gt;
+&lt;p class="levens"&gt;3&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+&lt;div id="gameArea"&gt;
+&lt;p class="gokCijfer"&gt;0&lt;/p&gt;
+&lt;button class="buttonHoger"&gt;Hoger&lt;/button&gt;
+&lt;button class="buttonLager"&gt;Lager&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit est
-              suscipit dolorem asperiores vero reprehenderit consectetur ab.
-              Earum eveniet sunt, accusamus minima ducimus atque dolore modi
-              quas nesciunt consequuntur voluptates?
+              Nu hebben we visuele onderdelen in de pagina. Ook hebben we elk
+              onderdeel een klasse gegeven voor styling die we nu gaan
+              behandelen.
             </p>
-            <p>We beginnen met een titel. Maak een tag</p>
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>en plaats er de tekst 'Hoger Lager' tussen.</p>
-          </div>
-          <div class="step-card" id="htmlstep5">
-            <h3>Stap 5 Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              nemo voluptatem impedit voluptates commodi modi, ullam sapiente
-              debitis officia quas ducimus, ad quia dolor. Nulla, dicta. Aperiam
-              temporibus dignissimos assumenda.
-            </p>
-
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="step-card" id="htmlstep6">
-            <h3>Stap 6 Lorem ipsum ✍️</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              nemo voluptatem impedit voluptates commodi modi, ullam sapiente
-              debitis officia quas ducimus, ad quia dolor. Nulla, dicta. Aperiam
-              temporibus dignissimos assumenda.
-            </p>
-
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="step-card" id="htmlstep7">
-            <h3>Stap 7 Lorem ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              nemo voluptatem impedit voluptates commodi modi, ullam sapiente
-              debitis officia quas ducimus, ad quia dolor. Nulla, dicta. Aperiam
-              temporibus dignissimos assumenda.
-            </p>
-
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="step-card special-card" id="htmlstep8">
-            <img
-              src="../assets/images/teacher.png"
-              alt="programmeur illustratie"
-              class="step-illustration"
-            />
-            <h3>Stap 8 Testkaartje met foto</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit est
-              suscipit dolorem asperiores vero reprehenderit consectetur ab.
-              Earum eveniet sunt, accusamus minima ducimus atque dolore modi
-              quas nesciunt consequuntur voluptates?
-            </p>
-            <p>We beginnen met een titel. Maak een tag</p>
-            <pre><code><&lt;h1&gt;&lt;/h1&gt;>
-              </code></pre>
-            <p>en plaats er de tekst 'Hoger Lager' tussen.</p>
           </div>
         </section>
+
         <section class="section css-section">
           <h2>CSS: We gaan onze pagina wat opfleuren!</h2>
           <div class="step-card" id="cssstep1">
-            <h3>Stap 1 Maak je HTML layout</h3>
+            <h3>Stap 1 Maak je css file aan</h3>
             <p>
-              Maak een projectmap aan. Dit doe je door je HTML-mapje aan te
-              klikken, zodat het opent in de editor. Je typt een uitroepteken en
-              vervolgens op tab. Nu heb je de basisstructuur van je
-              HTML-bestand. Geef een naam aan de titel in het head-gedeelte. Als
-              je vervolgens je wijziging opslaat en kijkt in je browser die je
-              via "Go Live" geopend hebt, zul je zien dat je tabblad de naam van
-              je titel heeft meegekregen.
+              In het dezelde folder gaan we een nieuwe file aanmaken met de naam
+              "main.css". Dit is de file waar we al onze css in gaan zetten. We
+              gaan deze file ook linken aan onze html file. Dit doen we door een
+              "link" tag onderaan in de head toe te voegen.
+            </p>
+            <pre>
+              <code>
+&lt;link rel="stylesheet" href="./main.css" &gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="step-card" id="cssstep2">
+            <h3>Stap 2 Maak de basis styling aan</h3>
+            <p>
+              We gaan nu een paar basis styling toevoegen op de de body en de
+              containers. Style van containers gaat meestal over de positie en
+              kleuren van de containers
+            </p>
+            <pre>
+              <code>
+body {
+margin: 0;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background: #f4f4f9;
+color: #333;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+                
+.gameContainer {
+background: white;
+border-radius: 0.5rem;
+box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+padding: 2rem;
+text-align: center;
+max-width: 400px;
+width: 90%;
+}
+                
+.statusBar {
+display: flex;
+justify-content: space-between;
+margin-bottom: 1.5rem;
+}
+              </code>
+            </pre>
+          </div>
+
+          <div class="step-card" id="cssstep3">
+            <h3>Stap 3 Maak de buttons en tekstjes mooi</h3>
+            <p>
+              Nu dat we de basis styling hebben gaan we de buttons en tekstjes
+              nog wat opfleuren. Deze styling gaat meer over de typografie,
+              opmaak van de buttons en kleurtjes.
+            </p>
+            <pre>
+              <code>
+.gameContainer p {
+margin: 0.5rem;
+font-size: 1rem;
+}
+                
+.gokCijfer {
+font-size: 3rem;
+margin: 1rem 0;
+font-weight: bold;
+}
+                
+button {
+background: #4a90e2;
+border: none;
+padding: 0.75rem 1.5rem;
+color: white;
+font-size: 1rem;
+border-radius: 0.5rem;
+margin: 0.5rem;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+                
+.buttonLager {
+background: #e94e77;
+}
+              </code>
+            </pre>
+            <p>
+              nu zou je een gestyled game-UI moeten te zien krijgen. Als je op
+              de buttons klikt zal er nog niets gebeuren. Maar dit gaan we nu
+              oplossen door te beginnen met JavaScript
             </p>
           </div>
         </section>
+
         <section class="section js-section">
           <h2>Javascript: De magie die onze app tot leven wekt!</h2>
           <div>
             <div class="step-card" id="jsstep1">
               <h3>
                 stap 1: verzamel alle tekst stukjes die we nodig hebben voor aan
-                te passen of aan te klikken
+                te passen of aan te klikken.
               </h3>
               <p>
                 we gaan levens, score en een random getal nodig hebben. Je hebt
                 hier al html voor voorzien dus we gaan deze oproepen via hun
-                id/classe
+                id/classe. Vergeet ook niet je script onderaan
+                in je body ook nog te linken. Anders zal je JS niet werken.
               </p>
+              <pre>
+                <code>
+&lt;script src="./index.js"&gt&lt;/script>
+                </code>
+              </pre>
               <pre><code> 
 let levens = document.querySelector(".levens");
 let score = document.querySelector(".score");
