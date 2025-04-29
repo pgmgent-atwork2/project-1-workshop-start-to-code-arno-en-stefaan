@@ -48,14 +48,6 @@ button {
   transition: background 0.2s ease;
 }
 
-button:hover {
-  background: #357ab8;
-}
-
 .buttonLager {
   background: #e94e77;
-}
-
-.buttonLager:hover {
-  background: #c93d62;
 }
