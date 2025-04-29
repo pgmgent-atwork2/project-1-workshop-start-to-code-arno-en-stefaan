@@ -240,6 +240,7 @@ article:last-child::after {
 }
 .section h2 {
   text-align: center;
+  margin-bottom: var(--spacing-xxl);
 }
 
 .html-section {
