@@ -98,7 +98,6 @@ main::after {
 
 .main-image img {
   max-width: 100%;
-
   transition: all 0.3s ease;
   border-radius: var(--radius-base);
   &:hover {
@@ -235,11 +234,14 @@ article:last-child::after {
   border-radius: var(--radius-base);
 }
 .section {
-  text-align: center;
   padding: var(--spacing-l);
   border-radius: var(--radius-xl);
   margin-bottom: var(--spacing-xxl);
 }
+.section h2 {
+  text-align: center;
+}
+
 .html-section {
   background-color: var(--green-subtle);
 }

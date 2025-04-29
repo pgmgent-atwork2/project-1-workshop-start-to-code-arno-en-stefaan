@@ -77,12 +77,15 @@
       <div class="steps-overview">
         <h2>Stap voor Stap overzicht</h2>
         <div class="steps-table">
+          <a href="#intro-html" class="step-link">📃HTML Structuur</a>
           <a href="#htmlstep1" class="step-link">📃 HTML Stap 1</a>
           <a href="#htmlstep2" class="step-link">📃 HTML Stap 2</a>
           <a href="#htmlstep3" class="step-link">📃 HTML Stap 3</a>
+          <a href="#intro-css" class="step-link">🎨CSS Styling</a>
           <a href="#cssstep1" class="step-link">🎨 CSS Stap 1</a>
           <a href="#cssstep2" class="step-link">🎨 CSS Stap 2</a>
           <a href="#cssstep3" class="step-link">🎨 CSS Stap 3</a>
+          <a href="#intro-js" class="step-link">✴️ Javascript interactie</a>
           <a href="#jsstep1" class="step-link">✴️ JS Stap 1</a>
           <a href="#jsstep2" class="step-link">✴️ JS Stap 2</a>
           <a href="#jsstep3" class="step-link">✴️ JS Stap 3</a>
@@ -94,29 +97,39 @@
       <div class="steps-container">
         <section class="section html-section">
           <h2>HTML: De basis van de applicatie</h2>
-          <div class="step-card" id="intro">
-            <h3>Structuur</h3>
+          <div class="step-card special-card" id="intro-html">
+            <img
+              src="../assets/images/teacher.png"
+              alt="developer illustratie"
+              class="step-illustration"
+            />
+            <h3>Structuur opzetten met HTML</h3>
             <p>
-              De basisstructuur van een website wordt opgemaakt met HTML, wat
-              staat voor .....
+              HTML is het skelet van je website. Het bepaalt welke onderdelen er
+              zijn: titels, knopjes, tekst en plaatjes. Zonder HTML weet je
+              computer niet wat waar hoort. Denk eraan als het bouwplan van je
+              digitale huis! 🏗️
             </p>
           </div>
           <div class="step-card" id="htmlstep1">
-            <h3>Stap 1 🗂️ Maak je project en basis-HTML aan</h3>
+            <h3>Stap 1 Maak je project en basis-HTML aan 🗂️</h3>
             <p>
               Begin met het maken van een nieuwe map op je computer,
-              bijvoorbeeld genaamd <code>hoger-lager</code>. Open deze map in je
-              code-editor (zoals Visual Studio Code).
+              bijvoorbeeld genaamd <code class="mark">hoger-lager</code>. Open
+              deze map in je code-editor (zoals Visual Studio Code).
             </p>
             <p>
               Maak vervolgens een nieuw bestand aan met de naam
-              <code>index.html</code>. Typ een uitroepteken (<code>!</code>) en
-              druk op <kbd>Tab</kbd> of <kbd>Enter</kbd>. Dit genereert
-              automatisch een basis HTML-structuur.
+              <code class="mark">index.html</code>. Typ een uitroepteken (<code
+                class="mark"
+                >!</code
+              >) en druk op <kbd class="mark">Tab</kbd> of
+              <kbd class="mark">Enter</kbd>. Dit genereert automatisch een basis
+              HTML-structuur.
             </p>
             <p>
-              Pas de titel aan naar <code>Hoger Lager</code> in de &lt;title&gt;
-              tag.
+              Pas de titel aan naar <code class="mark">Hoger Lager</code> in de
+              <span class="mark">&lt;title&gt;</span> tag.
             </p>
             <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -137,15 +150,16 @@
           <div class="step-card" id="htmlstep2">
             <h3>Stap 2 🧱 Voeg de structuur toe</h3>
             <p>
-              In de <code>&lt;body&gt;</code> van je document gaan we een
-              container maken met daarin twee gedeeltes, een container voor je
-              levens en score en een container voor je getal en buttons.
-              hiervoor gaan we divs gebruiken. Divs worden vaak gebruikt als een
+              In de <code class="mark">&lt;body&gt;</code> van je document gaan
+              we een container maken met daarin twee gedeeltes, een container
+              voor je levens en score en een container voor je getal en buttons.
+              Hiervoor gaan we divs gebruiken. Divs worden vaak gebruikt als een
               groeperings element. We gaan deze containers ook al een classe
               geven zodat we de containers later nog makkelijk kunnen stylen.
             </p>
             <p>
-              Je code in het &lt;body&gt;-gedeelte zou er nu zo uit moeten zien:
+              Je code in het <span class="mark">&lt;body&gt;</span>-gedeelte zou
+              er nu zo uit moeten zien:
             </p>
             <pre><code>
 &lt;div class="gameContainer"&gt;
@@ -164,9 +178,10 @@
           <div class="step-card" id="htmlstep3">
             <h3>Stap 3 Voeg de visual elementen toe</h3>
             <p>
-              De containers dat we net gemaakt hebben zijn niet zichtbaar omdat
+              De containers die we net gemaakt hebben zijn niet zichtbaar omdat
               we er nog geen andere elementen in hebben toegevoegd. We gaan nu
-              een paar 'p' tags en buttons toevoegen in de containers.
+              een paar '<span class="mark">p</span>' tags en
+              <span class="mark">buttons</span> 🔳 toevoegen in de containers.
             </p>
 
             <pre><code>
@@ -190,7 +205,7 @@
 &lt;/div&gt;
             </code></pre>
             <p>
-              Nu hebben we visuele onderdelen in de pagina. Ook hebben we elk
+              Nu hebben we visuele onderdelen in de pagina.👀 Ook hebben we elk
               onderdeel een klasse gegeven voor styling die we nu gaan
               behandelen.
             </p>
@@ -199,13 +214,29 @@
 
         <section class="section css-section">
           <h2>CSS: We gaan onze pagina wat opfleuren!</h2>
+          <div class="step-card special-card" id="intro-css">
+            <img
+              src="../assets/images/programmer2.png"
+              alt="leerkracht illustratie"
+              class="step-illustration"
+            />
+            <h3>Het oog wil ook wat met CSS</h3>
+            <p>
+              CSS kleurt je website in. Lettertypes, knoppen, achtergronden en
+              animaties — dat is allemaal CSS. Het is de kleerkast van je
+              pagina: zonder ziet alles er kaal uit. Met CSS wordt je site écht
+              knap! 🎨👗
+            </p>
+          </div>
+
           <div class="step-card" id="cssstep1">
             <h3>Stap 1 Maak je css file aan</h3>
             <p>
-              In het dezelde folder gaan we een nieuwe file aanmaken met de naam
-              "main.css". Dit is de file waar we al onze css in gaan zetten. We
-              gaan deze file ook linken aan onze html file. Dit doen we door een
-              "link" tag onderaan in de head toe te voegen.
+              In dezelfde folder gaan we een nieuwe file aanmaken met de naam
+              "main.css". 📃 Dit is de file waar we al onze css in gaan zetten.
+              We gaan deze file ook linken aan onze HTML - file. Dit doen we
+              door een "<span class="mark">link</span>" tag onderaan in de head
+              toe te voegen.
             </p>
             <pre>
               <code>
@@ -215,10 +246,10 @@
           </div>
 
           <div class="step-card" id="cssstep2">
-            <h3>Stap 2 Maak de basis styling aan</h3>
+            <h3>Stap 2 🖌️ Maak de basis styling aan</h3>
             <p>
-              We gaan nu een paar basis styling toevoegen op de de body en de
-              containers. Style van containers gaat meestal over de positie en
+              We gaan nu een paar basisstijlen toevoegen in de body en de
+              containers. Stijlen van containers gaat meestal over de positie en
               kleuren van de containers
             </p>
             <pre>
@@ -254,9 +285,9 @@ margin-bottom: 1.5rem;
           </div>
 
           <div class="step-card" id="cssstep3">
-            <h3>Stap 3 Maak de buttons en tekstjes mooi</h3>
+            <h3>Stap 3 Maak de buttons en tekstjes mooi 🎨</h3>
             <p>
-              Nu dat we de basis styling hebben gaan we de buttons en tekstjes
+              Nu dat we de basis styling hebben, gaan we de buttons en tekstjes
               nog wat opfleuren. Deze styling gaat meer over de typografie,
               opmaak van de buttons en kleurtjes.
             </p>
@@ -291,26 +322,39 @@ background: #e94e77;
               </code>
             </pre>
             <p>
-              nu zou je een gestyled game-UI moeten te zien krijgen. Als je op
+              Nu zou je een gestyled game-UI moeten te zien krijgen. Als je op
               de buttons klikt zal er nog niets gebeuren. Maar dit gaan we nu
-              oplossen door te beginnen met JavaScript
+              oplossen met JavaScript
             </p>
           </div>
         </section>
 
         <section class="section js-section">
           <h2>Javascript: De magie die onze app tot leven wekt!</h2>
+          <div class="step-card special-card" id="intro-js">
+            <img
+              src="../assets/images/programmer3.png"
+              alt="developer illustratie"
+              class="step-illustration"
+            />
+            <h3>Interactie met JavaScript</h3>
+            <p>
+              JavaScript is de tovenaar van je website. Daarmee maak je dingen
+              beweeglijk, interactief en slim. Klik je op een knop? JS laat iets
+              gebeuren! Het is de magie die alles tot leven wekt. ✨🧙‍♂️
+            </p>
+          </div>
           <div>
             <div class="step-card" id="jsstep1">
               <h3>
-                stap 1: verzamel alle tekst stukjes die we nodig hebben voor aan
+                Stap 1: verzamel alle tekst stukjes die we nodig hebben voor aan
                 te passen of aan te klikken.
               </h3>
               <p>
-                we gaan levens, score en een random getal nodig hebben. Je hebt
-                hier al html voor voorzien dus we gaan deze oproepen via hun
-                id/classe. Vergeet ook niet je script onderaan
-                in je body ook nog te linken. Anders zal je JS niet werken.
+                We gaan levens, een score en een random getal nodig hebben. Je
+                hebt hier al HTML voor voorzien dus we gaan deze oproepen via
+                hun id of klasse. Vergeet ook niet je script onderaan in de body
+                te linken. Anders zal je Javascript niet werken.
               </p>
               <pre>
                 <code>
@@ -329,13 +373,14 @@ let btnLager = document.querySelector(".buttonLager");
             </div>
 
             <div class="step-card" id="jsstep2">
+              <h3>Stap 2: Maak een functie aan</h3>
               <p>
-                nu gaan we een functie maken waar we een random getal in gaan
-                aanmaken. we zetten dit in een functie zodat we het nummer
-                meerdermaals kunnen gebruiken zonder dat het nummer hetzelfde
-                blijf. We gaan ook nog een aantal levens en de huidige score
-                moete bijhouden. we gaan hier gewoon een cijfer voor bijhouden
-                dat we kunnen aanassen/toepassen.
+                Nu gaan we een <span class="mark">functie</span> maken waar we
+                een random getal in gaan aanmaken. We zetten dit in een functie
+                zodat we het nummer meermaals kunnen gebruiken zonder dat het
+                nummer hetzelfde blijft. We gaan ook nog een aantal levens en de
+                huidige score moeten bijhouden.We gaan hier gewoon een cijfer
+                voor bijhouden dat we kunnen toepassen of aanpassen.
               </p>
               <pre><code>
 // aantal levens en score instellen
@@ -349,10 +394,12 @@ function nieuwGetal() {
             </code></pre>
             </div>
             <div class="step-card" id="jsstep3">
+              <h3>Stap 3 Zet de buttons aan het werk</h3>
               <p>
                 We hebben tot nu toe de buttons al aangeroepen maar als je er op
-                klikt gebeurd er nog altijd niets. Dit komt doordat er geen
-                "eventlistener" aan verbonden is.
+                klikt gebeurt er nog altijd niets. Dit komt doordat er geen
+                <span class="mark">"eventlistener"</span>
+                aan verbonden is.
               </p>
               <pre><code>
 //buttons een functie geven
@@ -361,12 +408,14 @@ btnLager.addEventListener("click", clickLager);
             </code></pre>
             </div>
             <div class="step-card" id="jsstep4">
+              <h3>Stap 4: Schrijf condities</h3>
               <p>
-                nu dat onze buttons een functie hebben kunnen we elke functie
-                uitschrijven. deze 2 functies gaan bijna exact het zelfde zijn
-                buiten de conditie. een conditie is een stukje coden dat we gaan
-                checken of het juist of fout is. Dit gaan we doen met een
-                "if-else loop".
+                Nu onze <span class="mark">buttons</span> een functie hebben,
+                kunnen we elke functie uitschrijven. Deze 2 functies zullen
+                bijna exact het zelfde zijn behalve
+                <span class="mark">de conditie</span>. Een conditie is een
+                stukje code waarvan we gaan checken of het juist of fout is. Dit
+                gaan we doen met een "<span class="mark">if-else loop</span>".
               </p>
               <pre>
               <code>
@@ -402,11 +451,12 @@ function clickLager() {
             </pre>
             </div>
             <div class="step-card" id="jsstep5">
+              <h3>Stap 5: Game over of niet?</h3>
               <p>
-                De laatste stap is checken als het spel gedaan is, we doen dit
-                in bijde functies op het einde. hierin gaan we checken of we nog
-                genoeg levens hebben om veder te spelen, zo niet herstart het
-                spel.
+                In de laatste stap gaan we checken of het spel gedaan is. We
+                doen dit in beide functies op het einde. Hierin gaan we checken
+                of we nog genoeg levens hebben om verder te spelen, zo niet
+                herstart het spel.
               </p>
               <pre>
               <code>
