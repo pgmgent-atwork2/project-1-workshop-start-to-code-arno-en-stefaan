@@ -104,7 +104,10 @@
             </p>
             <p>
               Pas de titel aan naar <code class="mark">Hoger Lager</code> in de
-              <span class="mark">&lt;title&gt;</span> tag.
+              <span class="mark">&lt;title&gt;</span> tag. We gaan ook nog een
+              link toevoegen naar een Google font. We gaan dit gebruiken om een
+              ander font toe te voegen aan een element. Plaats deze link onder
+              de title.
             </p>
             <div class="code-block">
               <button class="copy-btn btn">Copy</button>
@@ -115,6 +118,10 @@
 &lt;meta charset="UTF-8" /&gt;
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
 &lt;title&gt;Hoger Lager&lt;/title&gt;
+&lt;link
+href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+rel="stylesheet"
+&gt;
 &lt;/head&gt;
 &lt;body&gt;
         
@@ -263,7 +270,28 @@ width: 90%;
 .statusBar {
 display: flex;
 justify-content: space-between;
+gap: 1rem;
 margin-bottom: 1.5rem;
+}
+
+.statusBar div {
+background-color: #f0f0f5;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.statusBar p:first-child {
+margin-bottom: 0.25rem;
+font-weight: 500;
+}
+
+.statusBar p:last-child {
+font-size: 1.25rem;
+font-weight: bold;
 }
               </code>
             </pre>
@@ -290,6 +318,9 @@ font-size: 1rem;
 font-size: 3rem;
 margin: 1rem 0;
 font-weight: bold;
+color: #4a4a4a;
+transition: transform 0.3s ease;
+font-family: 'Press Start 2P', cursive;
 }
                 
 button {
