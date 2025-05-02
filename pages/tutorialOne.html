@@ -105,7 +105,9 @@
               Pas de titel aan naar <code class="mark">Hoger Lager</code> in de
               <span class="mark">&lt;title&gt;</span> tag.
             </p>
-            <pre><code>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="nl"&gt;
 &lt;head&gt;
@@ -118,6 +120,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
         </code></pre>
+            </div>
           </div>
           <div class="step-card" id="htmlstep2">
             <h3>Stap 2 🧱 Voeg de structuur toe</h3>
@@ -133,7 +136,9 @@
               Je code in het <span class="mark">&lt;body&gt;</span>-gedeelte zou
               er nu zo uit moeten zien:
             </p>
-            <pre><code>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre><code>
 &lt;div class="gameContainer"&gt;
 &lt;div class="statusBar"&gt;
 &lt;/div&gt;
@@ -142,6 +147,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
         </code></pre>
+            </div>
             <p>
               Bewaar je bestand en open het in de browser om te zien of alles
               correct verschijnt.
@@ -155,8 +161,9 @@
               een paar '<span class="mark">p</span>' tags en
               <span class="mark">buttons</span> 🔳 toevoegen in de containers.
             </p>
-
-            <pre><code>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre><code>
 &lt;div class="gameContainer"&gt;
 &lt;div id="statusBar"&gt;
 &lt;div&gt;
@@ -176,6 +183,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
+            </div>
             <p>
               Nu hebben we visuele onderdelen in de pagina.👀 Ook hebben we elk
               onderdeel een klasse gegeven voor styling die we nu gaan
@@ -210,11 +218,14 @@
               door een "<span class="mark">link</span>" tag onderaan in de head
               toe te voegen.
             </p>
-            <pre>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre>
               <code>
 &lt;link rel="stylesheet" href="./main.css" &gt;
               </code>
             </pre>
+            </div>
           </div>
           <div class="step-card" id="cssstep2">
             <h3>Stap 2 🖌️ Maak de basis styling aan</h3>
@@ -223,7 +234,9 @@
               containers. Stijlen van containers gaat meestal over de positie en
               kleuren van de containers
             </p>
-            <pre>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre>
               <code>
 body {
 margin: 0;
@@ -253,6 +266,7 @@ margin-bottom: 1.5rem;
 }
               </code>
             </pre>
+            </div>
           </div>
 
           <div class="step-card" id="cssstep3">
@@ -262,7 +276,9 @@ margin-bottom: 1.5rem;
               nog wat opfleuren. Deze styling gaat meer over de typografie,
               opmaak van de buttons en kleurtjes.
             </p>
-            <pre>
+            <div class="code-block">
+              <button class="copy-btn btn">Copy</button>
+              <pre>
               <code>
 .gameContainer p {
 margin: 0.5rem;
@@ -292,6 +308,7 @@ background: #e94e77;
 }
               </code>
             </pre>
+            </div>
             <p>
               Nu zou je een gestyled game-UI moeten te zien krijgen. Als je op
               de buttons klikt zal er nog niets gebeuren. Maar dit gaan we nu
@@ -326,12 +343,14 @@ background: #e94e77;
                 hun id of klasse. Vergeet ook niet je script onderaan in de body
                 te linken. Anders zal je Javascript niet werken.
               </p>
-              <pre>
+              <div class="code-block">
+                <button class="copy-btn btn">Copy</button>
+                <pre>
                 <code>
 &lt;script src="./index.js"&gt&lt;/script>
                 </code>
               </pre>
-              <pre><code> 
+                <pre><code> 
 let levens = document.querySelector(".levens");
 let score = document.querySelector(".score");
 let gokCijfer = document.querySelector(".gokCijfer");
@@ -340,6 +359,7 @@ let gokCijfer = document.querySelector(".gokCijfer");
 let btnHoger = document.querySelector(".buttonHoger");
 let btnLager = document.querySelector(".buttonLager");
             </code></pre>
+              </div>
             </div>
             <div class="step-card" id="jsstep2">
               <h3>Stap 2: Maak een functie aan ⚒️</h3>
@@ -351,7 +371,9 @@ let btnLager = document.querySelector(".buttonLager");
                 💌💌💌en de huidige score moeten bijhouden.We gaan hier gewoon
                 een cijfer voor bijhouden dat we kunnen toepassen of aanpassen.
               </p>
-              <pre><code>
+              <div class="code-block">
+                <button class="copy-btn btn">Copy</button>
+                <pre><code>
 // aantal levens en score instellen
 let aantalLevens = 3;
 let huidigeScore = 0;
@@ -361,6 +383,7 @@ function nieuwGetal() {
   return Math.floor(Math.random() * 11);
 }
             </code></pre>
+              </div>
             </div>
             <div class="step-card" id="jsstep3">
               <h3>Stap 3 Zet de buttons aan het werk</h3>
@@ -370,11 +393,14 @@ function nieuwGetal() {
                 <span class="mark">"eventlistener"</span>
                 aan verbonden is.
               </p>
-              <pre><code>
+              <div class="code-block">
+                <button class="copy-btn btn">Copy</button>
+                <pre><code>
 //buttons een functie geven
 btnHoger.addEventListener("click", clickHoger);
 btnLager.addEventListener("click", clickLager);
             </code></pre>
+              </div>
             </div>
             <div class="step-card" id="jsstep4">
               <h3>Stap 4: ✍️ Schrijf condities</h3>
@@ -386,7 +412,9 @@ btnLager.addEventListener("click", clickLager);
                 stukje code waarvan we gaan checken of het juist of fout is. Dit
                 gaan we doen met een "<span class="mark">if-else loop</span>".
               </p>
-              <pre>
+              <div class="code-block">
+                <button class="copy-btn btn">Copy</button>
+                <pre>
               <code>
 //functies aanmaken voor als er op een knop gedrukt word
 function clickHoger() {
@@ -418,6 +446,7 @@ function clickLager() {
 }
               </code>
             </pre>
+              </div>
             </div>
             <div class="step-card" id="jsstep5">
               <h3>Stap 5: Game over of niet?</h3>
@@ -427,7 +456,9 @@ function clickLager() {
                 of we nog genoeg levens hebben om verder te spelen 🎲🎲, zo niet
                 herstart het spel.
               </p>
-              <pre>
+              <div class="code-block">
+                <button class="copy-btn btn">Copy</button>
+                <pre>
               <code>
 function checkGameOver() {
   if (aantalLevens <= 0) {
@@ -437,10 +468,12 @@ function checkGameOver() {
 }
               </code>
             </pre>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
+    <script src="../js/index.js"></script>
   </body>
 </html>
