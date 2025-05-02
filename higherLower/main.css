@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f4f9;
   color: #333;
   display: flex;
@@ -20,10 +20,10 @@ body {
 }
 
 .statusBar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
 
 .gameContainer p {
   margin: 0.5rem;
@@ -35,7 +35,7 @@ body {
   margin: 1rem 0;
   font-weight: bold;
 }
-
+/* 
 button {
   background: #4a90e2;
   border: none;
@@ -46,8 +46,34 @@ button {
   margin: 0.5rem;
   cursor: pointer;
   transition: background 0.2s ease;
+} */
+
+/* .buttonLager {
+  background: #e94e77;
+} */
+
+/* /////////////////////////////// */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.buttonHoger {
+  background-color: #4a90e2;
+  color: white;
 }
 
 .buttonLager {
-  background: #e94e77;
+  background-color: #e94e77;
+  color: white;
 }
