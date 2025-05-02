@@ -52,7 +52,8 @@
   }
 }
 .badge {
-  width: 5.7rem;
+  text-decoration: none;
+  width: 8rem;
   background-color: var(--purple-tint);
   color: var(--purple);
   border: solid 1px var(--purple-shade);
@@ -65,8 +66,12 @@
   transform: translateX(-50%);
   z-index: 2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--purple-shade);
+  }
   @media (max-width: 48rem) {
-    width: 7.5rem;
+    width: 11rem;
     font-size: var(--size-s);
   }
 }
