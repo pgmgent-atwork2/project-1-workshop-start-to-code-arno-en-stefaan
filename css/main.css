@@ -5,16 +5,18 @@
 @import './table.css';
 
 body {
-  font-family: 'open-sans', cursive;
+  font-family: 'Architects Daughter', cursive;
   font-weight: 400;
   font-style: normal;
 }
 h1 {
+  font-family: 'Comic Neue', cursive;
   font-weight: 700;
   font-style: normal;
   font-size: var(--size-6xl);
 }
 h2 {
+  font-family: 'Comic Neue', cursive;
   font-size: var(--size-3xl);
   @media (max-width: 48rem) {
     font-size: var(--size-xxl);
